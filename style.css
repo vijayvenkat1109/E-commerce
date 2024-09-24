@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+        font-family: "Port Lligat Slab", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.nav-links{
+    display: flex;
+    column-gap: 10px;
+}
+.navlink a{
+    text-decoration: none;
+    color: #102023;
+}
+.navlink a:hover{
+    text-decoration: underline;
+    color: yellowgreen;
+}
+.menu{
+    display: none;
+}
+.sidenavbarlinks{
+    margin-bottom: 15px;
+}
+.sidenavbarlinks a{
+    color:white;
+    text-decoration: none;
+}
+.sidenavbarlinks a:hover{
+    color:white;
+    text-decoration: underline;
+}
+.sidenavbar{
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    left: -60%;
+    color: white;
+    padding: 10px;
+    transition: 2s;
+    
+}
+.head{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    
+}
+.but{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #102023;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.service{
+    padding: 15px;
+}
+.part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.part2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.part2 div{
+    background-color:cadetblue;
+    padding: 15px;
+    border-radius: 5px;
+}
+.Basis{
+    padding-left: 15px;
+}
+.basispart1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.basispart1 img{
+    padding-top:20px ;
+    padding-bottom: 20px;
+    height:250px;
+    width: 270px;
+}
+.inbasis{
+    position: relative;
+    flex-basis: 25%;
+}
+.basispart1 button{
+    width: 90px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10%;
+    background-color:antiquewhite;
+    color: black;
+    position: absolute;
+    top:70%;
+    right:40%
+    
+    
+}
+.basispart1 button:hover{
+    background-color:chartreuse;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.search{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 5px;
+    border-width: 5px; 
+    border-color: black;
+}
+.sub button{
+    background-color: #1D232C;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.endcard{
+    height: 200px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1D232C;
+    
+}
+.icons{
+    padding-top: 30px;
+}
+.searchsec{
+    margin-top: 20px;
+   
+}
+.find{
+  width: 80%;
+ 
+  border-radius: 10%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: auto;
+  margin-left: 80px;
+}
+.find input{
+    padding: 10px;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 10%;
+}
+.product img{
+    width: 200px;
+    height: 200px;
+}
+.product{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product div{
+    flex-basis: 20%;
+    text-align: center;
+}
+@media screen and (max-width:600px){
+    .menu{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .part2{
+        flex-direction: column;
+    }
+    
+}
